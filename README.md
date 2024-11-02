@@ -31,14 +31,15 @@ This repository contains an API project built using ASP.NET Core 8.0, following 
 
 ### 4. **Connect the DataBase**:
    - Create the **Connection String** and include it in the `Appsettings.json` file, for posql the connection String pattern is:
+   
     ```
      "ConnectionStrings": {
         "DbConnection": "Host=localhost;Database=WebApiApp;Username=postgres;Password=Put You're pass"
     }
     ```
-    - Create the AppDbContext file and make the ***OnConfiguring*** Methode and later on the OnModelCreating Methode and the DbSet's.
+  - Create the AppDbContext file and make the ***OnConfiguring*** Methode and later on the OnModelCreating Methode and the DbSet's.
 
-    - Register the Connection String in the **Program.cs** file
+  - Register the Connection String in the **Program.cs** file
 
         ```
             //Configure DbContext
