@@ -30,7 +30,7 @@ This repository contains an API project built using ASP.NET Core 8.0, following 
    ![Base_Files](./Assets/Packages.png)
 
 ### 4. **Connect the DataBase**:
-    - Create the **Connection String** and include it in the `Appsettings.json` file, for posql the connection String pattern is:
+   - Create the **Connection String** and include it in the `Appsettings.json` file, for posql the connection String pattern is:
     ```
      "ConnectionStrings": {
         "DbConnection": "Host=localhost;Database=WebApiApp;Username=postgres;Password=Put You're pass"
