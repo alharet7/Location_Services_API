@@ -61,28 +61,30 @@ This repository contains an API project built using ASP.NET Core 8.0, following 
  ![AppDbContex](./Assets/AppDbContext.png)
 
 ### 6. **Create the DTOs**
-    ![DTO's](./Assets/DTO's.png)
+   ![DTO's](./Assets/DTO's.png)
 
 ### 7. **Models Mapping**:
-    - Install Mapster Package by Run: `Install-Package Mapster` in the **NuGet package Console** 
+
+   - Install Mapster Package by Run: `Install-Package Mapster` in the **NuGet package Console** 
     - Mapping the Data between the main Models and the DTOs (each Model in a file)
      ![MappingFile](./Assets/MappingFile.png)
     
-    - Register the Mapster Confgurations in the **Program.cs** file
+   - Register the Mapster Confgurations in the **Program.cs** file
      ![MapsterConfgIn](./Assets/MapsterConfgIn_pcs.png)
 
 ### 8. **Create the **Interfaces and Repositories** and Implement them in `Program.cs` file**:
 
-      ![Repositories](./Assets/Repositories.png)
+   ![Repositories](./Assets/Repositories.png)
       
-    - Program.cs
+   - Program.cs
+   - 
      ![Reps&IF_in_Pcs](./Assets/Repos&Inter_in_Pcs.png)
 
 ### 9. **Create the Controllers and Create the GetAll method for each Entity**:
 
-    ![Controllers](./Assets/Controllers.png)
+   ![Controllers](./Assets/Controllers.png)
 
-    ![Controllers_Exa_](./Assets/Controller_ex.png)
+   ![Controllers_Exa_](./Assets/Controller_ex.png)
     
 ### 10. **Create GenericRepository, IGenericRepository files and register them in the `Program.cs`  file:**
  
@@ -102,8 +104,8 @@ This repository contains an API project built using ASP.NET Core 8.0, following 
  ![VenueRepo_CRUD](./Assets/VenueRepo_CRUD.png)
  
 ### 12. **Change the IsDeleted Prop to be an UpdateStatus Enum and Include three status inside it: New, Deleted and Updated**
-    
-     - Create the Enum:
+   
+   - Create the Enum:
       ![StatusEnum](./Assets/StatusEnum.png)
     
      - Do the right Configuration using Mapster:
@@ -130,7 +132,7 @@ This repository contains an API project built using ASP.NET Core 8.0, following 
 
   - **Why to Make Services?**
    -  Handle business logic and orchestrate operations across multiple repositories.
-   - Can be reused across different controllers or other services, promoting DRY (Don’t Repeat Yourself) principles.
+   - Can be reused across different controllers or other services, promoting DRY (Donâ€™t Repeat Yourself) principles.
    - Keeping business logic in services makes it easier to maintain and update without affecting controllers.
    - Services can be unit tested independently of the controllers, ensuring that business logic is correct.
  
@@ -187,7 +189,7 @@ During the development of this project, I encountered several challenges:
 
 Here are some helpful resources that I used during this project:
 
-1. [Entity Framework Core with PostgreSQL — Database First article.](https://medium.com/@ankushjain358/entity-framework-core-with-postgresql-database-first-ab03bf1079c4)
+1. [Entity Framework Core with PostgreSQL â€” Database First article.](https://medium.com/@ankushjain358/entity-framework-core-with-postgresql-database-first-ab03bf1079c4)
 
 2. [Setup PostgreSQL in .NET with Entity Framework](https://www.youtube.com/watch?v=z7G6HV7WWz0&t=182s).
 
